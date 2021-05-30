@@ -1,6 +1,7 @@
 package comcollections.src;
 
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Iterator;
 import java.util.Scanner;
 
@@ -36,11 +37,13 @@ public class arraylisting {
 		
 		System.out.println("Get the index the array:-"+al.get(3));
 		
-		al.set(3, "badboy");
+		//al.set(3, "badboy");
 		
 		while(itr.hasNext()) {
 			System.out.println(itr.next());
 		}
+		
+		Collections.sort(al);
 		System.out.println(al);
 		
 		
